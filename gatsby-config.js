@@ -6,5 +6,15 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['gatsby-plugin-postcss'],
+  plugins: [
+    'gatsby-plugin-postcss',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `disciplinas`,
+        path: `${__dirname}/disciplinas`,
+      },
+    },
+    `gatsby-transformer-remark`
+  ],
 }
