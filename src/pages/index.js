@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import Layout from '../components/layout'
 
@@ -9,9 +10,11 @@ export default function Home() {
         É um espaço onde os próprios alunos colaboram com diversas informações, como: links úteis, resumos,
         provas de anos anteriores e dicas.
       </p>
+      <Link to="/disciplinas">
       <button class="rounded px-3 py-2 m-1 border-b-4 border-l-2 shadow-lg bg-blue-800 border-blue-900 text-white mt-8">
         Disciplinas
       </button>
+      </Link>
     </Layout>
   )
 }
