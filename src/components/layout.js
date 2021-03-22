@@ -1,12 +1,10 @@
 import React from 'react';
+import Header from '../components/header';
 
 export default function Layout({ children }) {
     return (
-        <div class="m-10">
-            <div class="flex items-center mb-8">
-                <img class="w-14 mr-4" src="https://svgshare.com/i/VET.svg" alt=""/>
-                <h1> Espia Só </h1>
-            </div>
+        <div class="flex flex-col items-center content-center m-10 h-100">
+            <Header></Header>
             {children}
         </div>
     )
