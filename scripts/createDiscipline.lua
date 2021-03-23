@@ -1,25 +1,36 @@
 Files = {}
 
+Files.provas = [[
+---
+slug: "%s"
+title: "Provas"
+---
+]]
+
 Files.visaoGeral = [[
 ---
-slug: %s
-title: Visão Geral
+slug: "%s"
+title: "Visão Geral"
 ---
 ]]
 
 Files.linksUteis = [[
 ---
 slug: %s 
-title: Links Úteis
+title: "Links Úteis"
 ---
 ]]
 
 Files.README = [[
 ---
-slug: %s
-title: %s 
-periodo: %s
+slug: "%s"
+title: "%s"
+periodo: "%s"
 ---
+
+[Visão Geral](visaoGeral.md)
+[Links Úteis](linksUteis.md)
+[Provas](provas.md)
 ]]
 
 local function createFolder(mainName, subName)
@@ -28,7 +39,7 @@ local function createFolder(mainName, subName)
 end
 
 local function createFolders(discipline)
-    local subFolders = {"implementacoes", "resumos", "roteiros"}
+    local subFolders = {"implementacoes", "conteudos"}
     for i, sub in ipairs(subFolders) do
         createFolder(discipline.name, sub)
     end
@@ -39,7 +50,7 @@ local function createFile(discipline, fileName)
     print(path)
     local file = io.open(".." .. path .. ".md", "w")
     if fileName == "README" then
-        file:write(Files[fileName]:format(path, discipline.original, discipline.semester))
+        file:write(Files[fileName]:format(string.format("/disciplinas/%s", discipline.name), discipline.original, discipline.semester))
     else
         file:write(Files[fileName]:format(path))
     end
