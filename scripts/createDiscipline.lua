@@ -14,6 +14,14 @@ title: Links Úteis
 ---
 ]]
 
+Files.README = [[
+---
+slug: %s
+title: %s 
+periodo: %s
+---
+]]
+
 local function createFolder(mainName, subName)
     local path = string.format("../disciplinas/%s/%s", mainName, subName)
     os.execute("mkdir -p " .. path)
@@ -26,19 +34,22 @@ local function createFolders(discipline)
     end
 end
 
-local function createFile(discName, fileName)
-    local path = string.format("../disciplinas/%s/%s.md", discName, fileName)
+local function createFile(discipline, fileName)
+    local path = string.format("/disciplinas/%s/%s", discipline.name, fileName)
     print(path)
-    local file = io.open(path, "w")
-
-    file:write(Files[fileName])
+    local file = io.open(".." .. path .. ".md", "w")
+    if fileName == "README" then
+        file:write(Files[fileName]:format(path, discipline.original, discipline.semester))
+    else
+        file:write(Files[fileName]:format(path))
+    end
     file:close()
 end
 
 local function createFiles(discipline)
     for i, v in pairs(Files) do
         print(i)
-        createFile(discipline.name, i)
+        createFile(discipline, i)
     end
 end
 
@@ -56,6 +67,8 @@ io.write("Insira o Nome da Disciplina: ")
 discipline.name = io.read("*l")
 io.write("Insira o período da disciplina (0 se for optativa): ")
 discipline.semester = io.read("*l")
+
+discipline.original = discipline.name
 
 formatName(discipline)
 createFolders(discipline)
