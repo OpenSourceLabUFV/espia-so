@@ -19,10 +19,10 @@ local function createFolder(mainName, subName)
     os.execute("mkdir -p " .. path)
 end
 
-local function createFolders(name)
+local function createFolders(discipline)
     local subFolders = {"implementacoes", "resumos", "roteiros"}
     for i, sub in ipairs(subFolders) do
-        createFolder(name[1], sub)
+        createFolder(discipline.name, sub)
     end
 end
 
@@ -35,23 +35,28 @@ local function createFile(discName, fileName)
     file:close()
 end
 
-local function createFiles(name)
+local function createFiles(discipline)
     for i, v in pairs(Files) do
         print(i)
-        createFile(name, i)
+        createFile(discipline.name, i)
     end
 end
 
-local function formatName(name)
-    name[1] = name[1]:gsub(' ', ''):lower()
+local function formatName(discipline)
+    discipline.name = discipline.name:gsub(' ', ''):lower()
 
-    if (name[1]:match("%W")) then
+    if (discipline.name:match("%W")) then
         error("O nome da disciplina não pode conter caracteres especiais.")
     end
 
 end
 
-local discipline = {io.read("*l")}
+local discipline = {}
+io.write("Insira o Nome da Disciplina: ")
+discipline.name = io.read("*l")
+io.write("Insira o período da disciplina (0 se for optativa): ")
+discipline.semester = io.read("*l")
+
 formatName(discipline)
 createFolders(discipline)
-createFiles(discipline[1])
+createFiles(discipline)
