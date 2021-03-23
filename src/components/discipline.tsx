@@ -1,7 +1,27 @@
 import React from 'react'
+import { graphql } from "gatsby"
+import Layout from './layout'
 
-export default function Discipline() {
+export default function Discipline({data}) {
+    const post = data.markdownRemark
     return (
-        <h1>Hello</h1>
+        <Layout>
+            <h1>
+                {post.frontmatter.title}
+            </h1>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </Layout>
+        
     )
 }
+
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`

@@ -4,6 +4,6 @@ title: "Banco de Dados"
 periodo: "4"
 ---
 
-[Visão Geral](visaoGeral.md)
-[Links Úteis](linksUteis.md)
-[Provas](provas.md)
+[Visão Geral](/disciplinas/bancodedados/visaoGeral)
+[Links Úteis](/disciplinas/bancodedados/linksUteis)
+[Provas](/disciplinas/bancodedados/provas)

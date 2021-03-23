@@ -4,6 +4,6 @@ title: "Inteligencia Artificial"
 periodo: "6"
 ---
 
-[Visão Geral](visaoGeral.md)
-[Links Úteis](linksUteis.md)
-[Provas](provas.md)
+[Visão Geral](/disciplinas/inteligenciaartificial/visaoGeral)
+[Links Úteis](/disciplinas/inteligenciaartificial/linksUteis)
+[Provas](/disciplinas/inteligenciaartificial/provas)
