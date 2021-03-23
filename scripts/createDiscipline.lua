@@ -28,9 +28,9 @@ title: "%s"
 periodo: "%s"
 ---
 
-[Visão Geral](visaoGeral.md)
-[Links Úteis](linksUteis.md)
-[Provas](provas.md)
+[Visão Geral](%s/visaoGeral)
+[Links Úteis](%s/linksUteis)
+[Provas](%s/provas)
 ]]
 
 local function createFolder(mainName, subName)
@@ -49,8 +49,9 @@ local function createFile(discipline, fileName)
     local path = string.format("/disciplinas/%s/%s", discipline.name, fileName)
     print(path)
     local file = io.open(".." .. path .. ".md", "w")
+    local address = string.format("/disciplinas/%s", discipline.name)
     if fileName == "README" then
-        file:write(Files[fileName]:format(string.format("/disciplinas/%s", discipline.name), discipline.original, discipline.semester))
+        file:write(Files[fileName]:format(address, discipline.original, discipline.semester, address, address, address))
     else
         file:write(Files[fileName]:format(path))
     end
