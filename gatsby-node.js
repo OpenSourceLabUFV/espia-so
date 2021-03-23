@@ -1,6 +1,6 @@
 exports.createPages = async({ actions, graphql, reporter }) => {
     const { createPage } = actions
-    const template = require.resolve(`./src/components/discCard.js`)
+    const template = require.resolve(`./src/components/discipline.tsx`)
     const result = await graphql(`
       {
         allMarkdownRemark(
