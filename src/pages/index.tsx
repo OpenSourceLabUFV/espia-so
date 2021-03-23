@@ -11,7 +11,7 @@ export default function Home() {
         materiais de anos anteriores e dicas.
       </p>
       <Link to="/disciplinas">
-      <button className="rounded px-3 py-2 m-1 border-b-4 border-l-2 shadow-lg bg-blue-800 border-blue-900 text-white mt-8">
+      <button className="rounded px-3 py-2 m-1 border-b-4 border-l-2 shadow-lg bg-blue-800 border-blue-900 text-white mt-8 hover:shadow-md">
         Disciplinas
       </button>
       </Link>
