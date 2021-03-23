@@ -13,7 +13,9 @@ export default function Disciplinas({data}) {
     }
     return (
         <Layout>
-            {cards}
+            <div className="flex">
+                {cards}
+            </div>
         </Layout>
     )
 }
@@ -24,7 +26,7 @@ export const pageQuery = graphql`
             filter: {
                 fileAbsolutePath: { regex: "/README.md/" }
             }
-            sort: { fields: [frontmatter___title], order: ASC }
+            sort: { fields: [frontmatter___periodo], order: ASC }
         ) {
             edges {
                 node {
