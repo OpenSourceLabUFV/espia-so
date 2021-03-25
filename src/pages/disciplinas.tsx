@@ -7,10 +7,8 @@ export default function Disciplinas({data}) {
 
     let cards = []
 
-    for (let i = 0; i < data.allMarkdownRemark.edges.length; i++) {
-        let a = data.allMarkdownRemark.edges[i]
-        cards.push( DiscCard(a) )
-    }
+    for (let disc of data.allMarkdownRemark.edges)
+        cards.push( DiscCard(disc) )
     
     return (
         <Layout>

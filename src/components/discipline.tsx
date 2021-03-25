@@ -6,10 +6,10 @@ export default function Discipline({data}) {
     const post = data.markdownRemark
     return (
         <Layout>
-            <h1 className="font-sans text-2xl font-bold">
+            <h1 className="m-6 font-sans text-2xl font-bold text-left">
                 {post.frontmatter.title}
             </h1>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className="prose" dangerouslySetInnerHTML={{ __html: post.html }} />
         </Layout>
     )
 }

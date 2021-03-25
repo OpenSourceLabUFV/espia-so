@@ -15,13 +15,18 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.0",
     "gatsby": "^3.0.1",
+    "gatsby-plugin-typography": "^3.1.0",
     "gatsby-source-filesystem": "^3.1.0",
     "gatsby-transformer-remark": "^3.1.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19"
   },
   "devDependencies": {
+    "@types/typography": "^0.16.3",
     "autoprefixer": "^10.2.5",
     "gatsby-plugin-postcss": "^4.1.0",
     "gh-pages": "^3.1.0",

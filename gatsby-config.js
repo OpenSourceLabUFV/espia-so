@@ -15,6 +15,12 @@ module.exports = {
         path: `${__dirname}/disciplinas`,
       },
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/styles/typography`,
+      },
+    },
     `gatsby-transformer-remark`
   ],
 }
