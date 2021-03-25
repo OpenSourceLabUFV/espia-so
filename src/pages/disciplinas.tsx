@@ -7,10 +7,11 @@ export default function Disciplinas({data}) {
 
     let cards = []
 
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < data.allMarkdownRemark.edges.length; i++) {
         let a = data.allMarkdownRemark.edges[i]
         cards.push( DiscCard(a) )
     }
+    
     return (
         <Layout>
             <div className="flex">

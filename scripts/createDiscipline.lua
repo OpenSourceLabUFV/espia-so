@@ -1,72 +1,31 @@
-Files = {}
+NAME = ""
 
-Files.provas = [[
----
-slug: "%s"
-title: "Provas"
----
-]]
-
-Files.visaoGeral = [[
----
-slug: "%s"
-title: "Visão Geral"
----
-]]
-
-Files.linksUteis = [[
----
-slug: %s 
-title: "Links Úteis"
----
-]]
-
-Files.README = [[
+README = [[
 ---
 slug: "%s"
 title: "%s"
 periodo: "%s"
 ---
 
-[Visão Geral](%s/visaoGeral)
-[Links Úteis](%s/linksUteis)
-[Provas](%s/provas)
+Hello
 ]]
 
-local function createFolder(mainName, subName)
-    local path = string.format("../disciplinas/%s/%s", mainName, subName)
+local function createFolder(folderName)
+    NAME = folderName:gsub(' ', ''):lower()
+    local path = string.format("../disciplinas/%s", NAME)
     os.execute("mkdir -p " .. path)
 end
 
-local function createFolders(discipline)
-    local subFolders = {"implementacoes", "conteudos"}
-    for i, sub in ipairs(subFolders) do
-        createFolder(discipline.name, sub)
-    end
-end
-
-local function createFile(discipline, fileName)
-    local path = string.format("/disciplinas/%s/%s", discipline.name, fileName)
+local function createFile(discipline)
+    local path = string.format("/disciplinas/%s", NAME)
     print(path)
-    local file = io.open(".." .. path .. ".md", "w")
-    local address = string.format("/disciplinas/%s", discipline.name)
-    if fileName == "README" then
-        file:write(Files[fileName]:format(address, discipline.original, discipline.semester, address, address, address))
-    else
-        file:write(Files[fileName]:format(path))
-    end
+    local file = io.open(".." .. path .. "/README.md", "w")
+
+    file:write(README:format(path, discipline.name, discipline.semester))
     file:close()
 end
 
-local function createFiles(discipline)
-    for i, v in pairs(Files) do
-        print(i)
-        createFile(discipline, i)
-    end
-end
-
-local function formatName(discipline)
-    discipline.name = discipline.name:gsub(' ', ''):lower()
+local function checkName(discipline)
 
     if (discipline.name:match("%W")) then
         error("O nome da disciplina não pode conter caracteres especiais.")
@@ -80,8 +39,6 @@ discipline.name = io.read("*l")
 io.write("Insira o período da disciplina (0 se for optativa): ")
 discipline.semester = io.read("*l")
 
-discipline.original = discipline.name
-
-formatName(discipline)
-createFolders(discipline)
-createFiles(discipline)
+--checkName(discipline)
+createFolder(discipline.name)
+createFile(discipline)
