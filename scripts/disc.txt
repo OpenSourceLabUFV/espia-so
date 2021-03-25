@@ -1,0 +1,72 @@
+Programacao 1
+1
+Introducao aos Sistemas Logicos
+1
+Introducao a Ciencia da Computacao
+1
+Introducao a Algebra
+1
+Calculo 1
+1
+Iniciacao a Estatistica
+2
+Programacao 2
+2
+Ingles 1
+2
+Geometria Analitica e Algebra Linear
+2
+Calculo 2
+2
+Teoria da Computacao
+3
+Estruturas de Dados
+3
+Matematica Discreta
+3
+Pesquisa Operacional 1
+3
+Calculo 3
+3
+Banco de Dados 1
+4
+Computacao Experimental
+4
+Organizacao de COmputadores
+4
+Programacao Concorrente e Distribuida
+4
+Teoria e Modelo de Grafos
+4
+Projeto e Analise de Algoritmos
+4
+Engenharia de Software 1
+5
+Linguagens Formais e Automatos
+5
+Inteligencia Artificial 1
+5
+Arquitetura de Computadores
+5
+Redes de Computadores
+5
+Calculo Numerico
+5
+Metodologia de Pesquisa
+6
+Projeto e Desenvolvimento de Sistemas para a Web
+6
+Linguages de Programacao
+6
+Sistemas de Informacao
+6
+Construcao de Compiladores
+6
+Sistemas Operacionais
+6
+Projeto Final de Curso
+7
+Seminario 1
+7
+Seminario 2
+8

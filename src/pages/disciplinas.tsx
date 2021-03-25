@@ -14,7 +14,7 @@ export default function Disciplinas({data}) {
     
     return (
         <Layout>
-            <div className="flex">
+            <div className="grid grid-flow-row grid-cols-1 auto-rows-max lg:grid-cols-4">
                 {cards}
             </div>
         </Layout>

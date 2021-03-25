@@ -25,20 +25,13 @@ local function createFile(discipline)
     file:close()
 end
 
-local function checkName(discipline)
-
-    if (discipline.name:match("%W")) then
-        error("O nome da disciplina não pode conter caracteres especiais.")
-    end
-
+while true do
+    local discipline = {}
+    io.write("Insira o Nome da Disciplina: ")
+    discipline.name = io.read("*l")
+    io.write("Insira o período da disciplina (0 se for optativa): ")
+    discipline.semester = io.read("*l")
+    
+    createFolder(discipline.name)
+    createFile(discipline)
 end
-
-local discipline = {}
-io.write("Insira o Nome da Disciplina: ")
-discipline.name = io.read("*l")
-io.write("Insira o período da disciplina (0 se for optativa): ")
-discipline.semester = io.read("*l")
-
---checkName(discipline)
-createFolder(discipline.name)
-createFile(discipline)
