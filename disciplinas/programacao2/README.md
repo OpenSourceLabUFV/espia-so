@@ -2,6 +2,7 @@
 slug: "/disciplinas/programacao2"
 title: "Programação II"
 periodo: "2"
+hasContent: true
 ---
 
 ## Visão Geral

@@ -2,6 +2,7 @@
 slug: "/disciplinas/programacao1"
 title: "Programação I"
 periodo: "1"
+hasContent: true
 ---
 
 ## Visão Geral

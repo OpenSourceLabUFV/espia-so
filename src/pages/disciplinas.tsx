@@ -23,7 +23,8 @@ export const pageQuery = graphql`
     query {
         allMarkdownRemark(
             filter: {
-                fileAbsolutePath: { regex: "/README.md/" }
+                fileAbsolutePath: { regex: "/README.md/" },
+                frontmatter: {hasContent : {eq: true}}
             }
             sort: { fields: [frontmatter___periodo], order: ASC }
         ) {
