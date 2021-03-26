@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/inteligenciaartificial1"
-title: "Inteligencia Artificial 1"
+title: "Inteligência Artificial I"
 periodo: "5"
 ---
 

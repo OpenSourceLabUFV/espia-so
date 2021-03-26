@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/calculo3"
-title: "Calculo 3"
+title: "Cálculo 3"
 periodo: "3"
 ---
 

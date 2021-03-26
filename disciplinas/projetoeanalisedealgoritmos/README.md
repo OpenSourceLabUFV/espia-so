@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/projetoeanalisedealgoritmos"
-title: "Projeto e Analise de Algoritmos"
+title: "Projeto e Análise de Algoritmos"
 periodo: "4"
 ---
 

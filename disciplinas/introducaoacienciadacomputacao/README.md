@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/introducaoacienciadacomputacao"
-title: "Introducao a Ciencia da Computacao"
+title: "Introdução a Ciência da Computação"
 periodo: "1"
 ---
 

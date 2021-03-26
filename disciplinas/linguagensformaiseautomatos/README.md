@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/linguagensformaiseautomatos"
-title: "Linguagens Formais e Automatos"
+title: "Linguagens Formais e Autômatos"
 periodo: "5"
 ---
 

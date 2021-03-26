@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/seminario1"
-title: "Seminario 1"
+title: "Seminário 1"
 periodo: "7"
 ---
 

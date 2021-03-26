@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/calculonumerico"
-title: "Calculo Numerico"
+title: "Cálculo Numerico"
 periodo: "5"
 ---
 

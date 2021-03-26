@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/matematicadiscreta"
-title: "Matematica Discreta"
+title: "Matemática Discreta"
 periodo: "3"
 ---
 

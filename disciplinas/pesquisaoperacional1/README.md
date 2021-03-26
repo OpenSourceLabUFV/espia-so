@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/pesquisaoperacional1"
-title: "Pesquisa Operacional 1"
+title: "Pesquisa Operacional I"
 periodo: "3"
 ---
 

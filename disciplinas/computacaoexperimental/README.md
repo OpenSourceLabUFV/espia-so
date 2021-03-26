@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/computacaoexperimental"
-title: "Computacao Experimental"
+title: "Computação Experimental"
 periodo: "4"
 ---
 

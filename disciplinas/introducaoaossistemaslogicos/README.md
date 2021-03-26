@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/introducaoaossistemaslogicos"
-title: "Introducao aos Sistemas Logicos"
+title: "Introdução aos Sistemas Lógicos"
 periodo: "1"
 ---
 

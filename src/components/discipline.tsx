@@ -9,7 +9,7 @@ export default function Discipline({data}) {
             <h1 className="m-6 font-sans text-2xl font-bold text-left">
                 {post.frontmatter.title}
             </h1>
-            <div className="prose" dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className="prose prose-blue" dangerouslySetInnerHTML={{ __html: post.html }} />
         </Layout>
     )
 }

@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/sistemasdeinformacao"
-title: "Sistemas de Informacao"
+title: "Sistemas de Informação"
 periodo: "6"
 ---
 

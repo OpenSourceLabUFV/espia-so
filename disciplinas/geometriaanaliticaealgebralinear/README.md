@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/geometriaanaliticaealgebralinear"
-title: "Geometria Analitica e Algebra Linear"
+title: "Geometria Analítica e Álgebra Linear"
 periodo: "2"
 ---
 

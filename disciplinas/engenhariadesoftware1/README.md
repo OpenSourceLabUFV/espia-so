@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/engenhariadesoftware1"
-title: "Engenharia de Software 1"
+title: "Engenharia de Software I"
 periodo: "5"
 ---
 

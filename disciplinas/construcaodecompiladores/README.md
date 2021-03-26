@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/construcaodecompiladores"
-title: "Construcao de Compiladores"
+title: "Construção de Compiladores"
 periodo: "6"
 ---
 

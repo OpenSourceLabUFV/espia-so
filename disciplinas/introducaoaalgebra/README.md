@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/introducaoaalgebra"
-title: "Introducao a Algebra"
+title: "Introdução a Álgebra"
 periodo: "1"
 ---
 

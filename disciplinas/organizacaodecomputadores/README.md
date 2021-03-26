@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/organizacaodecomputadores"
-title: "Organizacao de COmputadores"
+title: "Organização de Computadores"
 periodo: "4"
 ---
 

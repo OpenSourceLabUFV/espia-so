@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/teoriadacomputacao"
-title: "Teoria da Computacao"
+title: "Teoria da Computação"
 periodo: "3"
 ---
 

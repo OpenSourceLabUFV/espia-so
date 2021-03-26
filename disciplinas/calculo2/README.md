@@ -1,6 +1,6 @@
 ---
 slug: "/disciplinas/calculo2"
-title: "Calculo 2"
+title: "Cálculo 2"
 periodo: "2"
 ---
 
