@@ -4,10 +4,12 @@ import React from 'react';
 export default function Header() {
     return (
         <Link to="/">
-            <header>
-            <div className="flex items-center mb-8 content-center">
-                    <img className="w-14 mr-4" src="https://svgshare.com/i/VET.svg" alt=""/>
-                    <h1 className="text-4xl font-sans font-bold"> Espia Só </h1>
+            <header className="items-center max-w-screen-md">
+            <div className="flex content-center mb-8 text-center">
+                <span className="w-12 mr-4">
+                <img className="" src="https://svgshare.com/i/VET.svg" alt=""/>
+                </span>
+                    <h1 className="font-sans text-4xl font-bold"> Espia Só </h1>
                 </div>
             </header>
         </Link>
