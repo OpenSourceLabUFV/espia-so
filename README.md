@@ -27,3 +27,7 @@ Instalar todas as dependências do item anterior seguindo seus guias de instala�
 4. Rodar o servidor de Desenvolvimento
 
 ```gatsby develop```
+
+## Contribuindo
+
+Temos uma wiki disponível [aqui](https://github.com/OpenSourceLabUFV/espia-so/wiki) com informações gerais. Caso tenha alguma dúvida, pode entrar em contato com a gente!
