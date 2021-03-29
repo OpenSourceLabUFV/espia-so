@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import Layout from './layout'
 
-export default function Discipline({data}) {
-    const post = data.markdownRemark
-    return (
+export default class Discipline extends Component {
+  
+    render() {
+      const post = this.props.data.markdownRemark
+      return (
         <Layout>
             <h1 className="m-6 font-sans text-2xl font-bold text-left">
                 {post.frontmatter.title}
@@ -12,6 +14,7 @@ export default function Discipline({data}) {
             <div className="prose prose-blue" dangerouslySetInnerHTML={{ __html: post.html }} />
         </Layout>
     )
+    }
 }
 
 export const query = graphql`
