@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import DiscCard from '../components/discCard'
 import { graphql } from 'gatsby'
+import Discipline from '../utils/Discipline'
+import Filter from '../utils/filterHandler'
 
 export default class Disciplinas extends Component {
 
@@ -9,18 +11,24 @@ export default class Disciplinas extends Component {
 
     constructor (props) {
         super(props)
-        for (let disc of props.data.allMarkdownRemark.edges) this.cards.push( DiscCard(disc) )
+        for (let disc of props.data.allMarkdownRemark.edges) this.cards.push(new Discipline(disc.node.frontmatter.slug, disc.node.frontmatter.title, disc.node.frontmatter.periodo) )
 
+        let discs = []
+
+        for (let disc of this.cards) discs.push(DiscCard(disc))
+        
         this.state = {
-            disciplines: [...this.cards]
+            disciplines: [...discs]
         }
     } 
 
     popDisc = () => {
-        this.cards.shift();
+        let c = Filter.bySemester(this.cards, 1)
+        let discs = []
+        for (let disc of c) discs.push(DiscCard(disc))
         
         this.setState({
-            disciplines: [...this.cards]
+            disciplines: [...discs]
         })
     }
 
@@ -32,7 +40,7 @@ export default class Disciplinas extends Component {
                 Filtrar
                 </button>
                 <div className="grid grid-flow-row grid-cols-1 auto-rows-max lg:grid-cols-4">
-                    {this.cards}
+                    {this.state.disciplines}
                 </div>
             </Layout>
         )
