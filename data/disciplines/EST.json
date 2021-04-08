@@ -1,0 +1,9 @@
+{
+    "disciplines": [
+        {
+            "code": "EST105",
+            "name": "Iniciação à Estatística",
+            "dependencies": ["MAT140"]
+        }
+    ]
+}

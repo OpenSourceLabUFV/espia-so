@@ -1,0 +1,34 @@
+{
+    "disciplines": [
+        {
+            "code": "MAT131",
+            "name": "Introdução à Álgebra",
+            "dependencies": []
+        },
+        {
+            "code": "MAT140",
+            "name": "Cálculo I",
+            "dependencies": []
+        },
+        {
+            "code": "MAT135",
+            "name": "Geometria Analítica e Álgebra Linear",
+            "dependencies": []
+        },
+        {
+            "code": "MAT147",
+            "name": "Cálculo II",
+            "dependencies": ["MAT140"]
+        },
+        {
+            "code": "MAT241",
+            "name": "Cálculo III",
+            "dependencies": ["MAT140", "MAT135"]
+        },
+        {
+            "code": "MAT271",
+            "name": "Cálculo Numérico",
+            "dependencies": ["MAT137", "MAT135", "MAT143", "MAT147", "INF100", "INF103", "INF110"]
+        }
+    ]
+}

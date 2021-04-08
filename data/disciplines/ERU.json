@@ -1,0 +1,9 @@
+{
+    "disciplines": [
+        {
+            "code": "ERU324",
+            "name": "Metodologia de Pesquisa",
+            "dependencies": []
+        }
+    ]
+}

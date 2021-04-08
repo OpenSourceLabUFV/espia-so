@@ -5,9 +5,15 @@ README = [[
 slug: "%s"
 title: "%s"
 periodo: "%s"
+code: "%s"
+hasContent: false
 ---
 
-Hello
+## Visão Geral
+
+## Ementa
+
+## Conteúdo
 ]]
 
 local function createFolder(folderName)

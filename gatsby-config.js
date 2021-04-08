@@ -21,6 +21,24 @@ module.exports = {
         pathToConfigModule: `src/styles/typography`,
       },
     },
+    {
+      resolve: `gatsby-source-mysql`,
+      options: {
+        connectionDetails: {
+          host: 'localhost',
+          user: 'root',
+          password: 'mJjlmnu3uO/o',
+          database: 'espiaso'
+        },
+        queries: [
+          {
+            statement: 'SELECT * FROM Discipline',
+            idFieldName: 'Code',
+            name: 'discipline'
+          }
+        ]
+      }
+    },
     `gatsby-transformer-remark`
   ],
 }

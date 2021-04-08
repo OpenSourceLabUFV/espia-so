@@ -1,0 +1,9 @@
+{
+    "disciplines": [
+        {
+            "code": "LET215",
+            "name": "Inglês I",
+            "dependencies": []
+        }
+    ]
+}

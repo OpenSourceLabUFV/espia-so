@@ -1,8 +1,7 @@
 ---
-slug: "/disciplinas/programacao1"
+slug: "/disciplinas/inf110"
 title: "Programação I"
 periodo: "1"
-hasContent: true
 ---
 
 ## Visão Geral

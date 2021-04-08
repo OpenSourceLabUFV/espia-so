@@ -1,0 +1,139 @@
+{
+    "disciplines": [
+        {
+            "code": "INF110",
+            "name": "Programação I",
+            "dependencies": []
+        },
+        {
+            "code": "INF191",
+            "name": "Introdução à Ciência da Computação",
+            "dependencies": []
+        },
+        {
+            "code": "INF150",
+            "name": "Introdução aos Sistemas Lógicos",
+            "dependencies": []
+        },
+        {
+            "code": "INF112",
+            "name": "Programação II",
+            "dependencies": ["INF110"]
+        },
+        {
+            "code": "INF130",
+            "name": "Teoria da Computação",
+            "dependencies": ["MAT131"]
+        },
+        {
+            "code": "INF213",
+            "name": "Estruturas de Dados",
+            "dependencies": ["INF112"]
+        },
+        {
+            "code": "INF230",
+            "name": "Matemática Discreta",
+            "dependencies": ["MAT131"]
+        },
+        {
+            "code": "INF280",
+            "name": "Pesquisa Operacional I",
+            "dependencies": ["INF100", "INF103", "INF110", "MAT135", "MAT137"]
+        },
+        {
+            "code": "INF220",
+            "name": "Banco de Dados I",
+            "dependencies": ["INF213"]
+        },
+        {
+            "code": "INF222",
+            "name": "Computação Experimental",
+            "dependencies": ["EST105"]
+        },
+        {
+            "code": "INF250",
+            "name": "Organização de Computadores",
+            "dependencies": ["INF150", "INF110", "ELT312", "INF100"]
+        },
+        {
+            "code": "INF320",
+            "name": "Programação Concorrente e Distribuída",
+            "dependencies": ["INF213"]
+        },
+        {
+            "code": "INF330",
+            "name": "Teoria e Modelos de Grafos",
+            "dependencies": ["INF213"]
+        },
+        {
+            "code": "INF332",
+            "name": "Projeto e Análise de Algoritmos",
+            "dependencies": ["INF213", "MAT131", "INF230"]
+        },
+        {
+            "code": "INF221",
+            "name": "Engenharia de Software I",
+            "dependencies": ["INF220"]
+        },
+        {
+            "code": "INF331",
+            "name": "Linguagens Formais e Autômatos",
+            "dependencies": ["MAT131"]
+        },
+        {
+            "code": "INF420",
+            "name": "Inteligência Artificial I",
+            "dependencies": ["INF130"]
+        },
+        {
+            "code": "INF450",
+            "name": "Arquitetura de Computadores",
+            "dependencies": ["INF250"]
+        },
+        {
+            "code": "INF452",
+            "name": "Redes de Computadores",
+            "dependencies": ["INF250"]
+        },
+        {
+            "code": "INF321",
+            "name": "Projeto e Desenvolvimento de Sistemas para a Web",
+            "dependencies": ["INF221", "INF452"]
+        },
+        {
+            "code": "INF340",
+            "name": "Linguagens de Programação",
+            "dependencies": ["INF112"]
+        },
+        {
+            "code": "INF421",
+            "name": "Sistemas de Informação",
+            "dependencies": ["INF221"]
+        },
+        {
+            "code": "INF441",
+            "name": "Construção de Compiladores",
+            "dependencies": ["INF250", "INF331"]
+        },
+        {
+            "code": "INF451",
+            "name": "Sistemas Operacionais",
+            "dependencies": ["INF310"]
+        },
+        {
+            "code": "INF498",
+            "name": "Seminário I",
+            "dependencies": ["INF496"]
+        },
+        {
+            "code": "INF496",
+            "name": "Projeto Final de Curso",
+            "dependencies": ["INF321", "ERU324"]
+        },
+        {
+            "code": "INF499",
+            "name": "Seminário I",
+            "dependencies": ["INF496"]
+        }
+    ]
+}
