@@ -65,7 +65,8 @@ exports.createPages = async({ actions, graphql, reporter }) => {
         context: {
           slug: node.Slug,
           codes: cds,
-          name: node.Name
+          name: node.Name,
+          id: node.ID
         }
       })
     })
