@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import DiscCard from '../components/discCard'
 import { graphql } from 'gatsby'
-import Discipline from '../utils/Discipline'
-import Filter from '../utils/filterHandler'
 
 export default class Disciplinas extends Component {
 
