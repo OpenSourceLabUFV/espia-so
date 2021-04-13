@@ -32,10 +32,23 @@ module.exports = {
         },
         queries: [
           {
+            statement: 'SELECT * FROM Course',
+            idFieldName: 'ID',
+            name: 'course'
+          },
+          {
+            statement: 'SELECT * FROM DiscCourse',
+            idFieldName: 'ID',
+            name: 'courseRelation',
+            parentName: 'course',
+            foreignKey: 'CourseID',
+            cardinality: 'OneToMany'
+          },
+          {
             statement: 'SELECT * FROM Discipline',
             idFieldName: 'Code',
-            name: 'discipline'
-          }
+            name: 'discipline',
+          },
         ]
       }
     },

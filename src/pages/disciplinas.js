@@ -87,14 +87,14 @@ export default class Disciplinas extends Component {
 export const pageQuery = graphql`
     query {
         allMysqlDiscipline(sort: {fields: Code}) {
-    edges {
-      node {
-        Code
-        HasContent
-        Name
-        Slug
-      }
-    }
-  }
+            edges {
+            node {
+                Code
+                HasContent
+                Name
+                Slug
+            }
+            }
+        }
     }
 `
