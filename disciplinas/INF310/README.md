@@ -1,5 +1,5 @@
 ---
-slug: "/disciplinas/programacaoconcorrenteedistribuida"
+slug: "/disciplinas/inf310"
 title: "Programação Concorrente e Distribuída"
 periodo: "4"
 hasContent: true

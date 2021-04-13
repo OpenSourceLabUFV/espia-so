@@ -1,5 +1,5 @@
 ---
-slug: "/disciplinas/redesdecomputadores"
+slug: "/disciplinas/inf452"
 title: "Redes de Computadores"
 periodo: "5"
 hasContent: true
