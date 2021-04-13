@@ -56,7 +56,7 @@
             "dependencies": ["INF150", "INF110", "ELT312", "INF100"]
         },
         {
-            "code": "INF320",
+            "code": "INF310",
             "name": "Programação Concorrente e Distribuída",
             "dependencies": ["INF213"]
         },
