@@ -6,7 +6,7 @@ export default class Layout extends Component {
 
     render() {
         return (
-            <div className="flex flex-col items-center content-center m-10">
+            <div className="flex flex-col items-center m-10">
                 <Header></Header>
                 {this.props.children}
             </div>
