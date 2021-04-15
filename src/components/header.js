@@ -1,6 +1,9 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
+/**
+ * Header Component. Used in all the pages.
+ */
 export default function Header() {
     return (
         <Link to="/">

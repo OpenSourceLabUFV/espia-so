@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
-import DiscCard from '../components/discCard'
+import Card from '../components/card'
 import { graphql } from 'gatsby'
+
+/**
+ * Old page to show all the disciplines. Now replaced by the Course pages.
+ */
 
 export default class Disciplinas extends Component {
 
@@ -74,7 +78,7 @@ export default class Disciplinas extends Component {
                 </button> */}
                 <div className="grid grid-flow-row grid-cols-1 auto-rows-max lg:grid-cols-4">
                     {this.props.data.allMysqlDiscipline.edges.map(({node}, index) => (
-                        <DiscCard slug={node.Slug} name={node.Name} code={node.Code}></DiscCard>
+                        <Card slug={node.Slug} name={node.Name} code={node.Code}></Card>
                     ))}
                 </div>
             </Layout>

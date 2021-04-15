@@ -1,7 +1,11 @@
 import { graphql } from "gatsby";
 import React, { Component } from "react";
-import DiscCard from "../components/discCard";
+import Card from "../components/card";
 import Layout from "../components/layout";
+
+/**
+ * Class component to show all the Courses registered.
+ */
 
 export default class Cursos extends Component {
 
@@ -10,7 +14,7 @@ export default class Cursos extends Component {
             <Layout>
                 <div className="grid grid-flow-row grid-cols-1 auto-rows-max lg:grid-cols-4">
                     {this.props.data.allMysqlCourse.nodes.map((node, index) => (
-                        <DiscCard slug={node.Slug} name={node.Name} code=""></DiscCard>
+                        <Card slug={node.Slug} name={node.Name} code=""></Card>
                     ))}
                 </div>
             </Layout>

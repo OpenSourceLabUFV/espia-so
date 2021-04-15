@@ -1,7 +1,10 @@
 import { Link } from 'gatsby'
 import React, { Component } from 'react'
+/**
+ * Component to show the Disciplines and Courses in form of clickable cards.
+ */
 
-export default class DiscCard extends Component {
+export default class Card extends Component {
     render() {
         return (
             <div className="m-6">

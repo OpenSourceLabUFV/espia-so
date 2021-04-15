@@ -6,27 +6,18 @@ O Espia Só é um lugar que vai te ajudar a passar nas matérias de Ciência da 
 
 1. [NodeJs](https://nodejs.org/en/)
 2. [Gatsby](https://www.gatsbyjs.com/)
-3. [Lua](https://www.lua.org/)
 
 ## Desenvolvimento
 
 Instalar todas as dependências do item anterior seguindo seus guias de instalação.
 
-1. Clonar o repositório
+1. Clonar o repositório: ```https://github.com/OpenSourceLabUFV/espia-so.git```
 
-```https://github.com/OpenSourceLabUFV/espia-so.git```
+2. Acessar a pasta: ```cd espia-so```
 
-2. Acessar a pasta
+3. Instalar os pacotes necessários: ```npm install```
 
-```cd espia-so```
-
-3. Instalar os pacotes necessários
-
-```npm install```
-
-4. Rodar o servidor de Desenvolvimento
-
-```gatsby develop```
+4. Rodar o servidor de Desenvolvimento: ```gatsby develop```
 
 ## Contribuindo
 

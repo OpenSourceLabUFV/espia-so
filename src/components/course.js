@@ -1,7 +1,12 @@
 import { graphql } from "gatsby";
 import React, { Component } from 'react'
 import Layout from "./layout";
-import DiscCard from '../components/discCard'
+import Card from '../components/card'
+
+/**
+ * Class component to represent a course page.
+ * Course pages are build in the gatsby-node.js file.
+ */
 
 export default class Course extends Component {
 
@@ -66,7 +71,7 @@ export default class Course extends Component {
             {
                 this.show.map((node, index) => {
                     return (
-                        <DiscCard slug={node.Slug} name={node.Name} code={node.Code}></DiscCard>
+                        <Card slug={node.Slug} name={node.Name} code={node.Code}></Card>
                     )
                 }
                 )

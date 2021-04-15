@@ -3,6 +3,10 @@ import React from 'react'
 import { Component } from 'react'
 import Layout from '../components/layout'
 
+/**
+ * Main page of the site. Has some useful information.
+ */
+
 export default class Home extends Component {
 
   render() {

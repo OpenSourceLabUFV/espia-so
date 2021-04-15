@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import Layout from './layout'
 
+/**
+ * Class component to represent a discipline page.
+ * Discipline pages are build in the gatsby-node.js file.
+ */
+
 export default class Discipline extends Component {
   
     render() {

@@ -2,6 +2,10 @@ import React from 'react';
 import { Component } from 'react';
 import Header from './header';
 
+/**
+ * Basic Layout for all the pages.
+ */
+
 export default class Layout extends Component {
 
     render() {
