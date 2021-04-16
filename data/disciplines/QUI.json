@@ -1,0 +1,14 @@
+{
+    "disciplines": [
+        {
+            "code": "QUI100",
+            "name": "Química Geral",
+            "dependencies": []
+        },
+        {
+            "code": "QUI107",
+            "name": "Laboratório de Química Geral",
+            "dependencies": ["QUI100", "QUI121"]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "disciplines": [
+        {
+            "code": "ENG275",
+            "name": "Fenômenos de Transporte",
+            "dependencies": ["FIS202", "MAT147", "MAT241", "MAT243"]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "disciplines": [
+        {
+            "code": "ECO270",
+            "name": "Introdução à Economia",
+            "dependencies": []
+        }
+    ]
+}

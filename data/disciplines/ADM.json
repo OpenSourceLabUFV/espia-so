@@ -1,0 +1,9 @@
+{
+    "disciplines": [
+        {
+            "code": "ADM100",
+            "name": "Introdução à Administração",
+            "dependencies": []
+        }
+    ]
+}

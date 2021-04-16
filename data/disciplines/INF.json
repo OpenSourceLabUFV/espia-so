@@ -134,6 +134,11 @@
             "code": "INF499",
             "name": "Seminário I",
             "dependencies": ["INF496"]
+        },
+        {
+            "code": "INF100",
+            "name": "Introdução à Programação I",
+            "dependencies": []
         }
     ]
 }

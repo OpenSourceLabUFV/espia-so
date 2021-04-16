@@ -1,0 +1,179 @@
+{
+    "disciplines": [
+        {
+            "code": "ELT190",
+            "name": "Introdução à Engenharia Elétrica",
+            "dependencies": []
+        },
+        {
+            "code": "ELT110",
+            "name": "Engenharia e Ciência dos Materiais",
+            "dependencies": ["QUI100"]
+        },
+        {
+            "code": "ELT210",
+            "name": "Medidas Elétricas e Magnéticas",
+            "dependencies": ["EST106", "ELT212"]
+        },
+        {
+            "code": "ELT211",
+            "name": "Sistemas Digitais",
+            "dependencies": ["INF100"]
+        },
+        {
+            "code": "ELT212",
+            "name": "Laboratório de Medidas Elétricas e Magnéticas",
+            "dependencies": ["ELT210"]
+        },
+        {
+            "code": "ELT216",
+            "name": "Laboratório de Sistemas Digitais",
+            "dependencies": ["ELT211"]
+        },
+        {
+            "code": "ELT220",
+            "name": "Circuitos Elétricos I",
+            "dependencies": ["ELT210", "MAT340", "ELT226"]
+        },
+        {
+            "code": "ELT223",
+            "name": "Eletromagnetismo",
+            "dependencies": ["MAT243", "MAT340"]
+        },
+        {
+            "code": "ELT226",
+            "name": "Laboratório de Circuitos Elétricos I",
+            "dependencies": ["ELT220"]
+        },
+        {
+            "code": "ELT221",
+            "name": "Circuitos Elétricos II",
+            "dependencies": ["ELT220", "MAT340", "ELT227"]
+        },
+        {
+            "code": "ELT222",
+            "name": "Circuitos Polifásicos",
+            "dependencies": ["ELT220", "ELT221", "ELT229"]
+        },
+        {
+            "code": "ELT224",
+            "name": "Instalações Elétricas I",
+            "dependencies": ["ARQ201", "ELT222"]
+        },
+        {
+            "code": "ELT225",
+            "name": "Eletromagnetismo Aplicado",
+            "dependencies": ["ELT223"]
+        },
+        {
+            "code": "ELT227",
+            "name": "Laboratório de Circuitos Elétricos II",
+            "dependencies": ["ELT221"]
+        },
+        {
+            "code": "ELT229",
+            "name": "Laboratório de Circuitos Polifásicos",
+            "dependencies": ["ELT222"]
+        },
+        {
+            "code": "ELT310",
+            "name": "Eletrônica I",
+            "dependencies": ["ELT220", "ELT210", "ELT315"]
+        },
+        {
+            "code": "ELT315",
+            "name": "Laboratório de Eletrônica I",
+            "dependencies": ["ELT310"]
+        },
+        {
+            "code": "ELT311",
+            "name": "Eletrônica II",
+            "dependencies": ["ELT310"]
+        },
+        {
+            "code": "ELT314",
+            "name": "Instrumentação Eletrônica",
+            "dependencies": ["ELT310"]
+        },
+        {
+            "code": "ELT330",
+            "name": "Sistemas de Controle I",
+            "dependencies": ["ELT221"]
+        },
+        {
+            "code": "ELT340",
+            "name": "Conversão Eletromecânica de Energia",
+            "dependencies": ["ELT220", "ELT225", "ELT343"]
+        },
+        {
+            "code": "ELT343",
+            "name": "Laboratório de Conversão Eletromecânica de Energia",
+            "dependencies": ["ELT340"]
+        },
+        {
+            "code": "ELT431",
+            "name": "Automação Industrial I",
+            "dependencies": ["ELT314", "MEC374"]
+        },
+        {
+            "code": "ELT432",
+            "name": "Laboratório de Automação Industrial I",
+            "dependencies": ["ELT431"]
+        },
+        {
+            "code": "ELT313",
+            "name": "Eletrônica de Potência",
+            "dependencies": ["ELT310"]
+        },
+        {
+            "code": "ELT331",
+            "name": "Sistemas de Controle II",
+            "dependencies": ["ELT330"]
+        },
+        {
+            "code": "ELT341",
+            "name": "Máquinas Elétricas I",
+            "dependencies": ["ELT340", "ELT222", "ELT229"]
+        },
+        {
+            "code": "ELT410",
+            "name": "Sinais e Sistemas",
+            "dependencies": ["ELT221"]
+        },
+        {
+            "code": "ELT342",
+            "name": "Máquinas Elétricas II",
+            "dependencies": ["ELT341"]
+        },
+        {
+            "code": "ELT420",
+            "name": "Sistemas Elétricos de Potência I",
+            "dependencies": ["ELT342", "MAT271"]
+        },
+        {
+            "code": "ELT422",
+            "name": "Geração, Transmissão e Distribuição de EnergiaElétrica",
+            "dependencies": ["ELT222"]
+        },
+        {
+            "code": "ELT450",
+            "name": "Sistemas de Comunicação",
+            "dependencies": ["ELT410"]
+        },
+        {
+            "code": "ELT401",
+            "name": "Projeto de Engenharia I",
+            "dependencies": []
+        },
+        {
+            "code": "ELT402",
+            "name": "Projeto de Engenharia II",
+            "dependencies": ["ELT401"]
+        },
+        {
+            "code": "ELT498",
+            "name": "Estágio Supervisionado",
+            "dependencies": []
+        }
+    ]
+}

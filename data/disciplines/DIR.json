@@ -1,0 +1,9 @@
+{
+    "disciplines": [
+        {
+            "code": "DIR138",
+            "name": "Direito e Legislação da Engenharia",
+            "dependencies": []
+        }
+    ]
+}

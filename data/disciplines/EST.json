@@ -4,6 +4,11 @@
             "code": "EST105",
             "name": "Iniciação à Estatística",
             "dependencies": ["MAT140"]
+        },
+        {
+            "code": "EST106",
+            "name": "Iniciação à Estatística",
+            "dependencies": ["MAT140", "MAT141", "MAT146"]
         }
     ]
 }

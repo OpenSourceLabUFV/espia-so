@@ -1,0 +1,9 @@
+{
+    "disciplines": [
+        {
+            "code": "BIO131",
+            "name": "Ecologia Básica",
+            "dependencies": []
+        }
+    ]
+}

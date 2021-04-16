@@ -1,0 +1,24 @@
+{
+    "disciplines": [
+        {
+            "code": "FIS201",
+            "name": "Física I",
+            "dependencies": ["MAT140", "MAT146", "MAT141"]
+        },
+        {
+            "code": "FIS224",
+            "name": "Laboratório de Física A",
+            "dependencies": ["FIS201"]
+        },
+        {
+            "code": "FIS202",
+            "name": "Física II",
+            "dependencies": ["FIS201", "FIS191", "MAT140", "MAT141", "MAT146"]
+        },
+        {
+            "code": "FIS223",
+            "name": "Mecânica",
+            "dependencies": ["FIS233"]
+        }
+    ]
+}

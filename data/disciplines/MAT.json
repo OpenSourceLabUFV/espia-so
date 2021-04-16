@@ -29,6 +29,26 @@
             "code": "MAT271",
             "name": "Cálculo Numérico",
             "dependencies": ["MAT137", "MAT135", "MAT143", "MAT147", "INF100", "INF103", "INF110"]
+        },
+        {
+            "code": "MAT141",
+            "name": "Cálculo Diferencial e Integral I",
+            "dependencies": []
+        },
+        {
+            "code": "MAT143",
+            "name": "Cálculo Diferencial e Integral II",
+            "dependencies": ["MAT141"]
+        },
+        {
+            "code": "MAT243",
+            "name": "Cálculo Diferencial e Integral III",
+            "dependencies": ["MAT143", "MAT152", "MAT137", "MAT135"]
+        },
+        {
+            "code": "MAT340",
+            "name": "Equações Diferenciais Ordinárias I",
+            "dependencies": ["MAT241", "MAT243"]
         }
     ]
 }

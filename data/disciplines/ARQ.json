@@ -1,0 +1,9 @@
+{
+    "disciplines": [
+        {
+            "code": "ARQ201",
+            "name": "Representação Gráfica para Engenharia",
+            "dependencies": []
+        }
+    ]
+}
