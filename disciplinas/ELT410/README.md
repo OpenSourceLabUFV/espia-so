@@ -1,5 +1,5 @@
 ---
-slug: "/disciplinas/inf130"
+slug: "/disciplinas/elt410"
 title: "Teoria da Computação"
 ---
 
