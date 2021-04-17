@@ -12,7 +12,7 @@ export default class Discipline extends Component {
     render() {
       const post = this.props.data.markdownRemark
       const sp = post.frontmatter.slug.split('/')
-      const editLink = "https://github.com/OpenSourceLabUFV/espia-so/edit/filters/disciplinas/" + sp[2].toUpperCase() + "/README.md"
+      const editLink = "https://github.com/OpenSourceLabUFV/espia-so/edit/main/disciplinas/" + sp[2].toUpperCase() + "/README.md"
 
       return (
         <Layout>
