@@ -5,7 +5,6 @@
  */
 
 module.exports = {
-  pathPrefix: "/espia-so",
   plugins: [
     'gatsby-plugin-postcss',
     {
