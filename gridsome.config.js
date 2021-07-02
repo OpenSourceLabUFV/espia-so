@@ -26,8 +26,8 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Courses',
-        path: './data/courses.json',
+        typeName: 'Disciplines',
+        path: './disciplinas/**/*.md',
       }
     }
   ]

@@ -1,0 +1,14 @@
+---
+slug: "/disciplinas/ena130"
+title: "Práticas Educativas I: Pedagogia do Trabalho"
+---
+
+Opa, parece que não tem nada nessa página. Você pode contribuir com conteúdo clicando no botão abaixo.
+
+<!-- Remova as setas do texto abaixo para escrever na página. Lembre também de excluir a linha acima -->
+
+<!-- ## Visão Geral
+
+## Ementa
+
+## Conteúdos ->

@@ -1,9 +1,9 @@
 <template>
     <Layout>
         <div v-for="course in $page.courses.edges[0].node.course" :key="course.id">
-            <g-link>
+            <a :href="$url('courses/' + course.id)">
                 <Card :name="course.name" code=""/>
-            </g-link>
+            </a>
         </div>
     </Layout>
 </template>
@@ -11,9 +11,12 @@
 <script>
 import Card from '../components/Card.vue'
 export default {
-    components: {
-        Card
-    }
+  metaInfo: {
+    title: 'Cursos'
+  },
+  components: {
+      Card
+  }
 }
 </script>
 
