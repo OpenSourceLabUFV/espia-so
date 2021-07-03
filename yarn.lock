@@ -945,13 +945,6 @@
     "mime-types" "^2.1.21"
     "slash" "^2.0.0"
 
-"@gridsome/transformer-json@^0.2.1":
-  "integrity" "sha512-W/pFbjq+K3ftUK4aDa8zuqHq7jGSpDCUyvbH++m+5HMwTbe3eB2FLC7x2guGXzpw/jwHO1ukkZExecsMkAAibw=="
-  "resolved" "https://registry.npmjs.org/@gridsome/transformer-json/-/transformer-json-0.2.1.tgz"
-  "version" "0.2.1"
-  dependencies:
-    "json-parse-better-errors" "^1.0.2"
-
 "@gridsome/transformer-remark@^0.6.4":
   "integrity" "sha512-DCRQn1KFLk9Iy+ZjhDdYoTOYhEBphP57dRsLkhLqcnbuMCttDcI6V9udUR6GHgWWN3h0XV2dGVXcQ056Xm9Hpg=="
   "resolved" "https://registry.npmjs.org/@gridsome/transformer-remark/-/transformer-remark-0.6.4.tgz"
@@ -1075,6 +1068,16 @@
   "version" "1.1.2"
   dependencies:
     "defer-to-connect" "^1.0.1"
+
+"@tailwindcss/typography@^0.4.1":
+  "integrity" "sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA=="
+  "resolved" "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.4.1.tgz"
+  "version" "0.4.1"
+  dependencies:
+    "lodash.castarray" "^4.4.0"
+    "lodash.isplainobject" "^4.0.6"
+    "lodash.merge" "^4.6.2"
+    "lodash.uniq" "^4.5.0"
 
 "@types/glob@^7.1.1":
   "integrity" "sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w=="
@@ -2651,6 +2654,15 @@
   "resolved" "https://registry.npmjs.org/commondir/-/commondir-1.0.1.tgz"
   "version" "1.0.1"
 
+"compass-vertical-rhythm@^1.4.5":
+  "integrity" "sha512-bJo3IYX7xmmZCDYjrT2XolaiNjGZ4E2JvUGxpdU0ecbH4ZLK786wvc8aHKVrGrKct9JlkmJbUi8YLrQWvOc+uA=="
+  "resolved" "https://registry.npmjs.org/compass-vertical-rhythm/-/compass-vertical-rhythm-1.4.5.tgz"
+  "version" "1.4.5"
+  dependencies:
+    "convert-css-length" "^1.0.1"
+    "object-assign" "^4.1.0"
+    "parse-unit" "^1.0.1"
+
 "component-emitter@^1.2.1":
   "integrity" "sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg=="
   "resolved" "https://registry.npmjs.org/component-emitter/-/component-emitter-1.3.0.tgz"
@@ -2706,6 +2718,11 @@
   "resolved" "https://registry.npmjs.org/console-control-strings/-/console-control-strings-1.1.0.tgz"
   "version" "1.1.0"
 
+"console-polyfill@^0.1.2":
+  "integrity" "sha1-ls/tUcr3gYn2mVcubxgnHcN8DjA="
+  "resolved" "https://registry.npmjs.org/console-polyfill/-/console-polyfill-0.1.2.tgz"
+  "version" "0.1.2"
+
 "console-stream@^0.1.1":
   "integrity" "sha1-oJX+B7IEZZVfL6/Si11yvM2UnUQ="
   "resolved" "https://registry.npmjs.org/console-stream/-/console-stream-0.1.1.tgz"
@@ -2734,6 +2751,14 @@
   "integrity" "sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA=="
   "resolved" "https://registry.npmjs.org/content-type/-/content-type-1.0.4.tgz"
   "version" "1.0.4"
+
+"convert-css-length@^1.0.1":
+  "integrity" "sha512-ecV7j3hXyXN1X2XfJBzhMR0o1Obv0v3nHmn0UiS3ACENrzbxE/EknkiunS/fCwQva0U62X1GChi8GaPh4oTlLg=="
+  "resolved" "https://registry.npmjs.org/convert-css-length/-/convert-css-length-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "console-polyfill" "^0.1.2"
+    "parse-unit" "^1.0.1"
 
 "convert-source-map@^1.7.0":
   "integrity" "sha512-+OQdjP49zViI/6i7nIJpA8rAl4sV/JdPfU9nZs3VqOwGIgizICvuN2ru6fMd+4llL0tar18UYJXfZ/TWtmhUjA=="
@@ -3163,7 +3188,7 @@
   dependencies:
     "ms" "2.1.2"
 
-"decamelize@^1.1.2":
+"decamelize@^1.1.2", "decamelize@^1.2.0":
   "integrity" "sha1-9lNNFRSCabIDUue+4m9QH5oZEpA="
   "resolved" "https://registry.npmjs.org/decamelize/-/decamelize-1.2.0.tgz"
   "version" "1.2.0"
@@ -4605,6 +4630,11 @@
     "section-matter" "^1.0.0"
     "strip-bom-string" "^1.0.0"
 
+"gray-percentage@^2.0.0":
+  "integrity" "sha1-tyonTRsTeRBKAFC2OyB9xT/lb5k="
+  "resolved" "https://registry.npmjs.org/gray-percentage/-/gray-percentage-2.0.0.tgz"
+  "version" "2.0.0"
+
 "gridsome-plugin-tailwindcss@^4.1.1":
   "integrity" "sha512-PlCY1oSdfrQ/DpLN8xK0oz4KYOA1Be6x34BiemhpF1X1JZ9FjnpR4bmQtv1HCvRQZM/UbZPso836UNTqKh/yCw=="
   "resolved" "https://registry.npmjs.org/gridsome-plugin-tailwindcss/-/gridsome-plugin-tailwindcss-4.1.1.tgz"
@@ -5930,6 +5960,11 @@
   "resolved" "https://registry.npmjs.org/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz"
   "version" "3.0.0"
 
+"lodash.castarray@^4.4.0":
+  "integrity" "sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU="
+  "resolved" "https://registry.npmjs.org/lodash.castarray/-/lodash.castarray-4.4.0.tgz"
+  "version" "4.4.0"
+
 "lodash.debounce@^4.0.8":
   "integrity" "sha1-gteb/zCmfEAF/9XiUVMArZyk168="
   "resolved" "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz"
@@ -5940,6 +5975,16 @@
   "resolved" "https://registry.npmjs.org/lodash.deburr/-/lodash.deburr-4.1.0.tgz"
   "version" "4.1.0"
 
+"lodash.isnumber@^3.0.0":
+  "integrity" "sha1-POdoEMWSjQM1IwGsKHMX8RwLH/w="
+  "resolved" "https://registry.npmjs.org/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz"
+  "version" "3.0.3"
+
+"lodash.isplainobject@^4.0.6":
+  "integrity" "sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs="
+  "resolved" "https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz"
+  "version" "4.0.6"
+
 "lodash.kebabcase@^4.1.1":
   "integrity" "sha1-hImxyw0p/4gZXM7KRI/21swpXDY="
   "resolved" "https://registry.npmjs.org/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz"
@@ -5949,6 +5994,11 @@
   "integrity" "sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4="
   "resolved" "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz"
   "version" "4.1.2"
+
+"lodash.merge@^4.6.2":
+  "integrity" "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ=="
+  "resolved" "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
+  "version" "4.6.2"
 
 "lodash.template@^4.5.0":
   "integrity" "sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A=="
@@ -5980,7 +6030,7 @@
   "resolved" "https://registry.npmjs.org/lodash.uniq/-/lodash.uniq-4.5.0.tgz"
   "version" "4.5.0"
 
-"lodash@^4.17.10", "lodash@^4.17.11", "lodash@^4.17.14", "lodash@^4.17.15", "lodash@^4.17.20", "lodash@^4.17.21", "lodash@^4.17.3", "lodash@^4.17.5":
+"lodash@^4.13.1", "lodash@^4.17.10", "lodash@^4.17.11", "lodash@^4.17.14", "lodash@^4.17.15", "lodash@^4.17.20", "lodash@^4.17.21", "lodash@^4.17.3", "lodash@^4.17.5":
   "integrity" "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
   "resolved" "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
   "version" "4.17.21"
@@ -6427,6 +6477,13 @@
   "integrity" "sha512-2lMlY1Yc1+CUy0gw4H95uNN7vjbpoED7NNRSBHE25nWfLBdmMzFCsPshlzbxHz+gYMcBEUN8V4pU16prcdPSgA=="
   "resolved" "https://registry.npmjs.org/modern-normalize/-/modern-normalize-1.1.0.tgz"
   "version" "1.1.0"
+
+"modularscale@^1.0.2":
+  "integrity" "sha1-So8TrzKl5SFPxuLPxSkGSr/X2Hc="
+  "resolved" "https://registry.npmjs.org/modularscale/-/modularscale-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "lodash.isnumber" "^3.0.0"
 
 "moment@^2.24.0":
   "integrity" "sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ=="
@@ -7023,6 +7080,11 @@
   "integrity" "sha1-8r0iH2zJcKk42IVWq8WJyqqiveE="
   "resolved" "https://registry.npmjs.org/parse-srcset/-/parse-srcset-1.0.2.tgz"
   "version" "1.0.2"
+
+"parse-unit@^1.0.1":
+  "integrity" "sha1-fhu21b7zh0wo45JSaiVBFwKR7s8="
+  "resolved" "https://registry.npmjs.org/parse-unit/-/parse-unit-1.0.1.tgz"
+  "version" "1.0.1"
 
 "parseurl@~1.3.3":
   "integrity" "sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ=="
@@ -9419,7 +9481,7 @@
     "unquote" "~1.1.1"
     "util.promisify" "~1.0.0"
 
-"tailwindcss@>=2.0", "tailwindcss@npm:@tailwindcss/postcss7-compat@^2.2.4":
+"tailwindcss@>=2.0", "tailwindcss@>=2.0.0", "tailwindcss@npm:@tailwindcss/postcss7-compat@^2.2.4":
   "integrity" "sha512-lFIBdD1D2w3RgHFg7kNB7U5LOlfbd+KXTzcLyC/RlQ9eVko6GjNCKpN/kdmfF9wiGxbSDT/3mousXeMZdOOuBg=="
   "resolved" "https://registry.npmjs.org/@tailwindcss/postcss7-compat/-/postcss7-compat-2.2.4.tgz"
   "version" "2.2.4"
@@ -9737,6 +9799,24 @@
   "integrity" "sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c="
   "resolved" "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
   "version" "0.0.6"
+
+"typography-normalize@^0.16.19":
+  "integrity" "sha512-vtnSv/uGBZVbd4e/ZhZB9HKBgKKlWQUXw74+ADIHHxzKp27CEf8PSR8TX1zF2qSyQ9/qMdqLwXYz8yRQFq9JLQ=="
+  "resolved" "https://registry.npmjs.org/typography-normalize/-/typography-normalize-0.16.19.tgz"
+  "version" "0.16.19"
+
+"typography@^0.16.21":
+  "integrity" "sha512-e8Hcg7WdvM9B9PI7hpk8Xg0jYVd0KHB26JAR+V6UZ8qe0mOsdd/Fnt8Zctrpahu6KmOy7LqUq6kYKPcYPEh9Zw=="
+  "resolved" "https://registry.npmjs.org/typography/-/typography-0.16.21.tgz"
+  "version" "0.16.21"
+  dependencies:
+    "compass-vertical-rhythm" "^1.4.5"
+    "decamelize" "^1.2.0"
+    "gray-percentage" "^2.0.0"
+    "lodash" "^4.13.1"
+    "modularscale" "^1.0.2"
+    "object-assign" "^4.1.0"
+    "typography-normalize" "^0.16.19"
 
 "uglify-js@3.4.x":
   "integrity" "sha512-Y2VsbPVs0FIshJztycsO2SfPk7/KAF/T72qzv9u5EpQ4kB2hQoHlhNQTsNyy6ul7lQtqJN/AoWeS23OzEiEFxw=="

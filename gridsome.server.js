@@ -40,18 +40,7 @@ module.exports = function (api) {
             title
             periodo
             slug
-          }
-        }
-      }
-    }`)
-
-    const { disciplines } = await graphql(`{
-      allDisciplines {
-        edges {
-          node {
-            title
-            periodo
-            slug
+            content
           }
         }
       }
@@ -68,11 +57,15 @@ module.exports = function (api) {
     });
 
     data.allDisciplines.edges.forEach(element => {
+      const sp = element.node.slug.split('/')
+      const editLink = "https://github.com/OpenSourceLabUFV/espia-so/edit/main/disciplinas/" + sp[2].toUpperCase() + "/README.md"
       createPage({
         path: element.node.slug,
         component: './src/templates/Discipline.vue',
         context: {
-          title: element.node.title
+          title: element.node.title,
+          content: element.node.content,
+          editLink: editLink
         }
       })
     });
