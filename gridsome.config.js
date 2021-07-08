@@ -29,6 +29,6 @@ module.exports = {
         typeName: 'Disciplines',
         path: './disciplinas/**/*.md',
       }
-    }
+    },
   ]
 }

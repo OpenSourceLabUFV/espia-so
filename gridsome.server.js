@@ -9,12 +9,21 @@ module.exports = function (api) {
   api.loadSource(async actions => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
     const Courses = require('./data/courses.json');
+    const DisciplineRelations = require('./data/disciplines.json');
 
-    const collection = actions.addCollection({
+    const courses = actions.addCollection({
       typeName: 'Courses'
     })
 
-    collection.addNode(Courses)
+    const disciplines = actions.addCollection({
+      typeName: 'DisciplinesRelation'
+    })
+
+    for (i of DisciplineRelations.disciplines) {
+      disciplines.addNode(i)
+    }
+
+    courses.addNode(Courses)
   })
 
   api.createPages(async ({ createPage, graphql }) => {
@@ -47,11 +56,18 @@ module.exports = function (api) {
     }`)
 
     data.allCourses.edges[0].node.course.forEach(element => {
+      dsc = []
+
+      for (d of element.disciplines) {
+        dsc.push(d.Code)
+      }
+
       createPage({
         path: `/courses/${element.id}`,
         component: './src/templates/Course.vue',
         context: {
-          title: element.name
+          title: element.name,
+          codes: dsc
         }
       })
     });
