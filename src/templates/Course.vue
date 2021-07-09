@@ -27,7 +27,7 @@ export default {
 
 <page-query>
 query($codes: [String]!) {
-    disciplines: allDisciplinesRelation(filter: {code: {in: $codes}}) {
+    disciplines: allDisciplinesRelation(filter: {code: {in: $codes}}, sortBy: "name", order: ASC) {
         edges {
           node {
             code
