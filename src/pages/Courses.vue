@@ -1,10 +1,10 @@
 <template>
     <Layout>
+      <div class="grid items-center grid-flow-row grid-cols-1 auto-rows-max lg:grid-cols-4">
         <div v-for="course in $page.courses.edges[0].node.course" :key="course.id">
-            <a :href="$url('courses/' + course.id)">
-                <Card :name="course.name" code=""/>
-            </a>
+          <Card :name="course.name" code="" :url="$url('courses/' + course.id)"/>
         </div>
+      </div>
     </Layout>
 </template>
 

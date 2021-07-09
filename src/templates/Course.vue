@@ -1,10 +1,10 @@
 <template>
     <Layout>
         <h1>{{ $context.title }}</h1>
-        <div v-for="disc in $page.disciplines.edges" :key="disc.node.code">
-            <a :href="$url('disciplinas/' + disc.code)">
-            <Card :name="disc.node.name" :code="disc.node.code"></Card>
-            </a>
+        <div class="grid grid-flow-row grid-cols-1 auto-rows-max lg:grid-cols-4">
+            <div v-for="disc in $page.disciplines.edges" :key="disc.node.code">
+                <Card :name="disc.node.name" :code="disc.node.code" :url="$url('disciplinas/' + disc.node.code)"></Card>
+            </div>
         </div>
     </Layout>
 </template>
@@ -13,6 +13,12 @@
 import Card from '../components/Card.vue'
 
 export default {
+    // https://gridsome.org/docs/head/
+    metaInfo() {
+        return {
+            title: this.$context.title
+        }
+    },
     components: {
         Card
     }
