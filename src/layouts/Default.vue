@@ -1,7 +1,7 @@
 <template>
-  <div class="layout">
+  <div class="flex flex-col items-center px-20 mt-10 mb-0">
     <g-link to="/">
-    <header class="header">
+    <header class="flex items-center content-center max-w-screen-md mb-8">
       <g-image alt="Ícone Espia Só" src="~/favicon.png" width="80"/>
       <strong>
         <h1 class="text-4xl font-bold">{{ $static.metadata.siteName }}</h1>
