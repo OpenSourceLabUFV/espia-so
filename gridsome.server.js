@@ -23,7 +23,11 @@ module.exports = function (api) {
       disciplines.addNode(i)
     }
 
-    courses.addNode(Courses)
+    for (i of Courses.course) {
+      courses.addNode(i)
+    }
+
+    //courses.addNode(Courses)
   })
 
   api.createPages(async ({ createPage, graphql }) => {
@@ -32,14 +36,12 @@ module.exports = function (api) {
       allCourses {
         edges {
           node {
-            course {
               id
               name
               disciplines {
                 Code
                 Semester
               }
-            }
           }
         }
       }
@@ -55,18 +57,18 @@ module.exports = function (api) {
       }
     }`)
 
-    data.allCourses.edges[0].node.course.forEach(element => {
+    data.allCourses.edges.forEach(element => {
       dsc = []
 
-      for (d of element.disciplines) {
+      for (d of element.node.disciplines) {
         dsc.push(d.Code)
       }
 
       createPage({
-        path: `/courses/${element.id}`,
+        path: `/courses/${element.node.id}`,
         component: './src/templates/Course.vue',
         context: {
-          title: element.name,
+          title: element.node.name,
           codes: dsc
         }
       })

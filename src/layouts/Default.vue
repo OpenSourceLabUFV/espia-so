@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center px-20 mt-10 mb-0">
+  <div class="flex flex-col items-center mt-10 mb-0">
     <g-link to="/">
     <header class="flex items-center content-center max-w-screen-md mb-8">
       <g-image alt="Ícone Espia Só" src="~/favicon.png" width="80"/>

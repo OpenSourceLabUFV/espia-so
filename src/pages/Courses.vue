@@ -1,8 +1,8 @@
 <template>
     <Layout>
       <div class="grid items-center grid-flow-row grid-cols-1 auto-rows-max lg:grid-cols-4">
-        <div v-for="course in $page.courses.edges[0].node.course" :key="course.id">
-          <Card :name="course.name" code="" :url="$url('courses/' + course.id)"/>
+        <div v-for="course in $page.courses.edges" :key="course.node.id">
+          <Card :name="course.node.name" code="" :url="$url('courses/' + course.node.id)"/>
         </div>
       </div>
     </Layout>
@@ -22,19 +22,13 @@ export default {
 
 <page-query>
 query {
-  courses: allCourses {
+  courses: allCourses(sortBy: "name", order: ASC) {
     edges {
       node {
-        course {
           id
           name
-        }
       }
     }
   }
 }
 </page-query>
-
-<style>
-
-</style>
