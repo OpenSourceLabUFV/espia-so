@@ -30,5 +30,12 @@ module.exports = {
         path: './disciplinas/**/*.md',
       }
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'CodeOfConduct',
+        path: './CODE_OF_CONDUCT.md',
+      }
+    },
   ]
 }
