@@ -1,14 +1,24 @@
-# Default starter for Gridsome
+# Espia Só
 
-This is the project you get when you run `gridsome create new-project`.
+O Espia Só é um lugar que vai te ajudar a passar nas matérias de Ciência da Computação. É um espaço onde os próprios alunos colaboram com diversas informações, como: links úteis, resumos, materiais de anos anteriores e dicas.
 
-### 1. Install Gridsome CLI tool if you don't have
+## Dependências
 
-`npm install --global @gridsome/cli`
+1. [NodeJs](https://nodejs.org/en/)
+2. [Gridsome](https://gridsome.org/)
 
-### 2. Create a Gridsome project
+## Desenvolvimento
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+Instalar todas as dependências do item anterior seguindo seus guias de instalação.
+
+1. Clonar o repositório: ```https://github.com/OpenSourceLabUFV/espia-so.git```
+
+2. Acessar a pasta: ```cd espia-so```
+
+3. Instalar os pacotes necessários: ```npm install```
+
+4. Rodar o servidor de Desenvolvimento: ```gridsome develop```
+
+## Contribuindo
+
+Temos uma wiki disponível [aqui](https://github.com/OpenSourceLabUFV/espia-so/wiki) com informações gerais. Caso tenha alguma dúvida, pode entrar em contato com a gente!
