@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <h1 class="text-xl font-semibold">{{ $context.title }}</h1>
-        <div class="grid grid-flow-row grid-cols-1 auto-rows-max lg:grid-cols-4">
+        <div class="grid items-center grid-flow-row grid-cols-1 auto-rows-max lg:grid-cols-4">
             <div v-for="disc in $page.disciplines.edges" :key="disc.node.code">
                 <Card :name="disc.node.name" :code="disc.node.code" :url="$url('disciplinas/' + disc.node.code)"></Card>
             </div>
