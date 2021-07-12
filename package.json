@@ -4,12 +4,15 @@
   "scripts": {
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "build": "gridsome build"
+    "build": "gridsome build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "@tailwindcss/typography": "^0.4.1",
+    "gh-pages": "^3.2.3",
     "gridsome": "^0.7.0",
     "typography": "^0.16.21"
   },

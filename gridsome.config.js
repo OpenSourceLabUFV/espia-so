@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'Espia Só',
+  siteUrl: 'http://espiaso.oslu.org/',
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",
