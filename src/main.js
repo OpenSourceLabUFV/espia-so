@@ -2,12 +2,16 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
-// import Buefy from 'buefy'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { config, library } from '@fortawesome/fontawesome-svg-core'
+import { faGithub, faTwitter, faDiscord, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
-// import 'buefy/dist/buefy.css'
+config.autoAddCss = false;
+library.add(faGithub, faTwitter, faDiscord, faInstagram)
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-  // Vue.use(Buefy)
+  Vue.component('font-awesome', FontAwesomeIcon)
 }
