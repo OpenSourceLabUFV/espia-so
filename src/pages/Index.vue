@@ -12,7 +12,7 @@
 
     <div class="grid grid-flow-row mt-24 lg:grid-flow-col gap-y-6 lg:gap-x-4 auto-cols-auto">
       <Callout title="Como Funciona?">
-        <p>Bem vindo! Esse site é uma enciclopédia online das mateŕias da UFV. Os prṕrios alunos da universidade colaboram com informações e conteúdos que eles têm. Todos os alunos podem contribuir! Então, se você tem algo para contribuir, confira nosso <strong><a href="https://github.com/OpenSourceLabUFV/espia-so/wiki">Guia de Contribuição.</a></strong></p>
+        <p>Bem vindo! Esse site é uma enciclopédia online das matérias da UFV. Os próprios alunos da universidade colaboram com informações e conteúdos que eles têm. Todos os alunos podem contribuir! Então, se você tem interesse em ajudar, confira nosso <strong><a href="https://github.com/OpenSourceLabUFV/espia-so/wiki">Guia de Contribuição.</a></strong></p>
       </Callout>
       <Callout title="Regras Gerais">
         <p>Para a contribuição no Espia Só, algumas regras devem ser seguidas: </p>
@@ -29,13 +29,14 @@
 
 <script>
 import Callout from '../components/Callout.vue';
+
 //https://github.com/gridsome/gridsome.org/blob/master/src/components/home/HomeHowItWorkSimple.vue
 export default {
   metaInfo: {
     title: 'Espia Só'
   },
   components: {
-    Callout
+    Callout,
   }
 }
 </script>
