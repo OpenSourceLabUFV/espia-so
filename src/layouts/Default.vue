@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center mt-10 mb-0">
-    <header class="flex items-center content-center max-w-screen-md mb-8">
+    <header class="flex flex-col items-center content-center max-w-screen-md mb-8 lg:flex-row">
       <g-link to="/">
         <div class="flex flex-row items-center">
           <g-image alt="Ícone Espia Só" src="~/favicon.png" width="80"/>
@@ -9,7 +9,7 @@
           </strong>
         </div>
       </g-link>
-      <div class="relative pt-2 mx-8 text-gray-600">
+      <div class="relative pt-2 mx-8 mt-4 text-gray-600 lg:mt-0">
         <input class="h-10 px-5 pr-16 text-sm bg-white border-2 border-gray-300 rounded-lg focus:outline-none"
           type="text" id="search" name="search" placeholder="Busque por uma Disciplina" v-model="search">
       </div>
