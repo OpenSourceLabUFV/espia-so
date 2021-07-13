@@ -9,7 +9,7 @@
         Acessar Cursos
       </b-button>
     </g-link>
-
+    <LazyHydrate when-visible>
     <div class="grid grid-flow-row mt-24 lg:grid-flow-col gap-y-6 lg:gap-x-4 auto-cols-auto">
       <Callout title="Como Funciona?">
         <p>Bem vindo! Esse site é uma enciclopédia online das matérias da UFV. Os próprios alunos da universidade colaboram com informações e conteúdos que eles têm. Todos os alunos podem contribuir! Então, se você tem interesse em ajudar, confira nosso <strong><a href="https://github.com/OpenSourceLabUFV/espia-so/wiki">Guia de Contribuição.</a></strong></p>
@@ -23,12 +23,14 @@
         </ul>
       </Callout>
     </div>
+    </LazyHydrate>
     </div>
   </Layout>
 </template>
 
 <script>
 import Callout from '../components/Callout.vue';
+import LazyHydrate from 'vue-lazy-hydration';
 
 //https://github.com/gridsome/gridsome.org/blob/master/src/components/home/HomeHowItWorkSimple.vue
 export default {
@@ -37,6 +39,7 @@ export default {
   },
   components: {
     Callout,
+    LazyHydrate
   }
 }
 </script>
