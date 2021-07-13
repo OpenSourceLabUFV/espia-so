@@ -1,14 +1,12 @@
 
 module.exports = {
-    purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-      extend: {},
-    },
-    variants: {
-      extend: {},
-    },
+    purge: [
+      './src/**/*.vue',
+      './src/**/*.js',
+      './src/**/*.md',
+      './src/**/*.html',
+    ],
     plugins: [
-      require('@tailwindcss/typography'),
+      require('@tailwindcss/typography')
     ],
   }
