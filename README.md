@@ -6,8 +6,8 @@ O Espia Só é um lugar que vai te ajudar a passar nas matérias de Ciência da 
 
 ## Funcionalidades
 
-* Ambiente colaborativo para a construção do conhecimento.
-* Interface pensada para todos os dispositivos.
+- Ambiente colaborativo para a construção do conhecimento.
+- Interface pensada para todos os dispositivos.
 
 ## 🤝 Contribua
 
@@ -29,7 +29,7 @@ Siga as instruções de instalação para o seu sistema operacional:
 2. [Gridsome](https://gridsome.org/)
 
 ### 2. Clone o repositório
- 
+
 Execute:
 
 ```
@@ -38,15 +38,15 @@ git clone https://github.com/OpenSourceLabUFV/espia-so.git
 
 ### 3. Acesse a Pasta
 
-```cd espia-so```
+`cd espia-so`
 
 ### 4. Instale os Pacotes Necessários
 
-```npm install```
+`npm install`
 
 ### 5. Rode o servidor de desenvolvimento
 
-```gridsome develop```
+`gridsome develop`
 
 ## 🎫 Licença
 
@@ -56,5 +56,6 @@ Esse projeto é licenciado nos termos da licença open-source [MIT](https://choo
 
 Abaixo está uma lista de links interessantes e projetos similares:
 
-* [Tamburetei](https://github.com/opendevufcg/Tamburetei/)
-* [Wikipédia](https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal)
+- [Tamburetei](https://github.com/opendevufcg/Tamburetei/)
+- [Wikipédia](https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal)
+- [Wikiversidade](https://pt.wikiversity.org/wiki/P%C3%A1gina_principal)

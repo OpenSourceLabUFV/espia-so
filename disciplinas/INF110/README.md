@@ -27,3 +27,4 @@ A Disciplina de Programação I é o primeiro contato dos estudantes com program
 ### Implementações
 
 - [Trabalhos Práticos (2019)](https://github.com/lucasjoviniano/UFV/tree/main/INF110)
+- [Aulas Práticas (2019)](https://github.com/lucasjoviniano/UFV/tree/main/INF110/Praticas%20-%20Larissa)
