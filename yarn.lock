@@ -957,6 +957,13 @@
     "sort-package-json" "^1.15.0"
     "update-notifier" "^4.1.0"
 
+"@gridsome/plugin-google-analytics@^0.1.2":
+  "integrity" "sha512-41rWKTXQLnZphP8Fozzjh240lg/v5/JEDacB6ZJEr3RzXz3oYvoEQMOxQaUEgZkS8oOSG9TYDoBWVegzwMOuaw=="
+  "resolved" "https://registry.npmjs.org/@gridsome/plugin-google-analytics/-/plugin-google-analytics-0.1.2.tgz"
+  "version" "0.1.2"
+  dependencies:
+    "vue-analytics" "^5.16.1"
+
 "@gridsome/source-filesystem@^0.6.2":
   "integrity" "sha512-K1pyXwFYIlABaHq3wqOPyYt4ARzLZuUQ+UZKjDSBT9I0T0qpCbwir5kJMQkR7qY4ONflUrv8fgG6DNSrc1uzbA=="
   "resolved" "https://registry.npmjs.org/@gridsome/source-filesystem/-/source-filesystem-0.6.2.tgz"
@@ -10452,6 +10459,11 @@
   "integrity" "sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ=="
   "resolved" "https://registry.npmjs.org/vm-browserify/-/vm-browserify-1.1.2.tgz"
   "version" "1.1.2"
+
+"vue-analytics@^5.16.1":
+  "integrity" "sha512-HPKQMN7gfcUqS5SxoO0VxqLRRSPkG1H1FqglsHccz6BatBatNtm/Vyy8brApktZxNCfnAkrSVDpxg3/FNDeOgQ=="
+  "resolved" "https://registry.npmjs.org/vue-analytics/-/vue-analytics-5.22.1.tgz"
+  "version" "5.22.1"
 
 "vue-hot-reload-api@^2.3.0":
   "integrity" "sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog=="

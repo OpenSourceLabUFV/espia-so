@@ -40,5 +40,11 @@ module.exports = {
         path: './CODE_OF_CONDUCT.md',
       }
     },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'G-EQGSDVFY42'
+      }
+    }
   ]
 }
