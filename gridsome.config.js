@@ -2,7 +2,7 @@ const tailwindcss = require("tailwindcss");
 
 module.exports = {
   siteName: 'Espia Só',
-  siteUrl: 'https://espiaso.oslu.org/',
+  siteUrl: 'https://opensourcelabufv.github.io/espia-so/',
   css: {
     loaderOptions: {
       postcss: {
